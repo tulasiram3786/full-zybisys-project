@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.922">
+    <properties></properties>
+
+
+
+            <testcase
+                name="verifyContractedBandwidth"
+                time="7.182"
+                classname="modules.admin.billsummary.VerifyBillSummary">
+            </testcase>
+            <testcase
+                name="login"
+                time="5.740"
+                classname="modules.admin.billsummary.VerifyBillSummary">
+            </testcase>
+</testsuite>

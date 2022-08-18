@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+ <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+ <!-- <test thread-count="1" name="Test">
+    <classes>
+      <class name="zybisysapp.Dashboardinstancescount"/>
+    </classes>
+  </test>--> <!-- Test -->
+  <!-- <test  name="Test"  preserve-order="true">
+    <classes>
+    
+      <class name="modules.privilege">
+       <methods>
+	        <include name = "setUp"/> 
+	        <include name = "addUser"/> 
+	        <include name = "EditUser"/> 
+	        <include name = "changePassWord"/> 
+	        <include name = "deleteUser"/> 
+	        <include name = "ServicesOkCount"/> 
+	        <include name = "ServicesWarnCount"/> 
+	        <include name = "ServicesCriticalCount"/> 
+	        <include name = "Actions"/> 
+	        <include name = "ChildTags"/> 
+	        <include name = "tearDown"/> 
+	    </methods>
+      </class>
+    </classes>
+  </test> --> 
+ <!-- <test  name="Test"  preserve-order="true">
+    <classes>
+     
+      <class name="COCmodules.DashBoard">
+       <methods>
+	        <include name = "setUp"/> 
+	        <include name = "instanceTotalCount"/> 
+	        <include name = "instanceUpCount"/> 
+	        <include name = "InstanceDownCount"/> 
+	        <include name = "ServicesTotalCount"/> 
+	        <include name = "ServicesOk"/> 
+	        <include name = "ServicesWarnCount"/> 
+	        <include name = "ServicesCriticalCount"/> 
+	        <include name = "Actions"/> 
+	        <include name = "ChildTags"/> 
+	        <include name = "tearDown"/> 
+	    </methods>
+      </class>
+    </classes>
+  </test>
+  -->  
+    <test  name="Test"  preserve-order="true">
+    <classes>
+     <!--<class name="modules.admin.audit"/> --> 
+      <class name="COCmodules.privilege">
+       <methods>
+	       <include name = "setUp"/> 
+	       <include name = "addUser"/> 
+	         <include name = "invaidFirstName"/> 
+	        <include name = "invaidEmail"/> 
+	        <include name = "EditUser"/> 
+	        <include name = "changePassWord"/> 
+	        <include name = "deleteUser"/> 
+	        <include name = "tearDown"/> 
+	    </methods>
+      </class>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

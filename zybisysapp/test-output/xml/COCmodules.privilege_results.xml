@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="170.715">
+    <properties></properties>
+
+
+
+            <testcase
+                name="setUp"
+                time="9.850"
+                classname="COCmodules.privilege">
+            </testcase>
+            <testcase
+                name="invaidEmail"
+                time="60.370"
+                classname="COCmodules.privilege">
+            </testcase>
+            <testcase
+                name="deleteUser"
+                time="11.622"
+                classname="COCmodules.privilege">
+            </testcase>
+            <testcase
+                name="invaidFirstName"
+                time="20.839"
+                classname="COCmodules.privilege">
+            </testcase>
+            <testcase
+                name="changePassWord"
+                time="36.039"
+                classname="COCmodules.privilege">
+            </testcase>
+            <testcase
+                name="addUser"
+                time="5.346"
+                classname="COCmodules.privilege">
+            </testcase>
+            <testcase
+                name="EditUser"
+                time="26.649"
+                classname="COCmodules.privilege">
+            </testcase>
+</testsuite>

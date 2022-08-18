@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="104.363">
+    <properties></properties>
+
+
+
+            <testcase
+                name="Action"
+                time="14.166"
+                classname="modules.instance">
+            </testcase>
+            <testcase
+                name="verifyInstance"
+                time="79.229"
+                classname="modules.instance">
+            </testcase>
+            <testcase
+                name="setUp"
+                time="10.968"
+                classname="modules.instance">
+            </testcase>
+</testsuite>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="3.364">
+    <properties></properties>
+
+            <testcase
+                name="login"
+                time="3.364"
+                classname="modules.components.VerifyCustomer">
+
+            <failure type="org.openqa.selenium.SessionNotCreatedException" message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-L326GGM&apos;, ip: &apos;192.168.0.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]">
+                <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-L326GGM', ip: '192.168.0.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+                org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48)modules.components.VerifyCustomer.login(VerifyCustomer.java:19)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:564)org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1511)org.testng.TestRunner.privateRun(TestRunner.java:794)org.testng.TestRunner.run(TestRunner.java:596)org.testng.SuiteRunner.runTest(SuiteRunner.java:377)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)org.testng.SuiteRunner.run(SuiteRunner.java:276)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)org.testng.TestNG.runSuitesLocally(TestNG.java:1134)org.testng.TestNG.runSuites(TestNG.java:1063)org.testng.TestNG.run(TestNG.java:1031)org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </failure>
+    </testcase>
+
+
+</testsuite>

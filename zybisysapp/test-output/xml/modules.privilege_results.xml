@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="130.000">
+    <properties></properties>
+
+
+
+            <testcase
+                name="deleteUser"
+                time="10.709"
+                classname="modules.privilege">
+            </testcase>
+            <testcase
+                name="addUser"
+                time="6.021"
+                classname="modules.privilege">
+            </testcase>
+            <testcase
+                name="invaidEmail"
+                time="30.611"
+                classname="modules.privilege">
+            </testcase>
+            <testcase
+                name="invaidFirstName"
+                time="20.017"
+                classname="modules.privilege">
+            </testcase>
+            <testcase
+                name="EditUser"
+                time="26.368"
+                classname="modules.privilege">
+            </testcase>
+            <testcase
+                name="changePassWord"
+                time="36.274"
+                classname="modules.privilege">
+            </testcase>
+</testsuite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="251.339">
+    <properties></properties>
+
+
+
+            <testcase
+                name="InValidPassWord"
+                time="119.795"
+                classname="modules.components.Login">
+            </testcase>
+            <testcase
+                name="ValidLogin"
+                time="11.688"
+                classname="modules.components.Login">
+            </testcase>
+            <testcase
+                name="InValidUserName"
+                time="119.856"
+                classname="modules.components.Login">
+            </testcase>
+</testsuite>

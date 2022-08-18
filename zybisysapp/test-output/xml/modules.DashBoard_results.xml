@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="9"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="135.713">
+    <properties></properties>
+
+
+
+            <testcase
+                name="ServicesTotalCount"
+                time="6.537"
+                classname="modules.DashBoard">
+            </testcase>
+            <testcase
+                name="ServicesOk"
+                time="12.773"
+                classname="modules.DashBoard">
+            </testcase>
+            <testcase
+                name="Actions"
+                time="46.629"
+                classname="modules.DashBoard">
+            </testcase>
+            <testcase
+                name="ServicesWarnCount"
+                time="11.022"
+                classname="modules.DashBoard">
+            </testcase>
+            <testcase
+                name="ChildTags"
+                time="47.125"
+                classname="modules.DashBoard">
+            </testcase>
+            <testcase
+                name="instanceTotalCount"
+                time="0.217"
+                classname="modules.DashBoard">
+            </testcase>
+            <testcase
+                name="instanceUpCount"
+                time="0.129"
+                classname="modules.DashBoard">
+            </testcase>
+            <testcase
+                name="InstanceDownCount"
+                time="0.307"
+                classname="modules.DashBoard">
+            </testcase>
+            <testcase
+                name="ServicesCriticalCount"
+                time="10.974"
+                classname="modules.DashBoard">
+            </testcase>
+</testsuite>

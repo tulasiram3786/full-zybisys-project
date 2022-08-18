@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="87.109">
+    <properties></properties>
+
+
+
+            <testcase
+                name="verifySubscription"
+                time="74.515"
+                classname="modules.Backup">
+            </testcase>
+            <testcase
+                name="setUp"
+                time="12.594"
+                classname="modules.Backup">
+            </testcase>
+</testsuite>

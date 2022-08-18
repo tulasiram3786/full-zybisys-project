@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="9"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="134.710">
+    <properties></properties>
+
+
+
+            <testcase
+                name="instanceTotalCount"
+                time="0.232"
+                classname="COCmodules.DashBoard">
+            </testcase>
+            <testcase
+                name="instanceUpCount"
+                time="0.204"
+                classname="COCmodules.DashBoard">
+            </testcase>
+            <testcase
+                name="InstanceDownCount"
+                time="0.327"
+                classname="COCmodules.DashBoard">
+            </testcase>
+            <testcase
+                name="ServicesOk"
+                time="11.093"
+                classname="COCmodules.DashBoard">
+            </testcase>
+            <testcase
+                name="ServicesTotalCount"
+                time="6.292"
+                classname="COCmodules.DashBoard">
+            </testcase>
+            <testcase
+                name="ServicesWarnCount"
+                time="11.100"
+                classname="COCmodules.DashBoard">
+            </testcase>
+            <testcase
+                name="ServicesCriticalCount"
+                time="11.039"
+                classname="COCmodules.DashBoard">
+            </testcase>
+            <testcase
+                name="ChildTags"
+                time="47.455"
+                classname="COCmodules.DashBoard">
+            </testcase>
+            <testcase
+                name="Actions"
+                time="46.968"
+                classname="COCmodules.DashBoard">
+            </testcase>
+</testsuite>

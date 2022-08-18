@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="97.347">
+    <properties></properties>
+
+
+
+            <testcase
+                name="Action"
+                time="13.644"
+                classname="COCmodules.instance">
+            </testcase>
+            <testcase
+                name="setUp"
+                time="10.114"
+                classname="COCmodules.instance">
+            </testcase>
+            <testcase
+                name="verifyInstance"
+                time="73.589"
+                classname="COCmodules.instance">
+            </testcase>
+</testsuite>
