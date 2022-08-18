@@ -233,7 +233,7 @@ public static Float getTotalGbForIpAddress(WebDriver driver, String ip) throws I
 			int i = 1;
 			while (!elementText.getText().equals(timeValue1)) {
 				WebElement element = driver.findElement(By.xpath(handleXpath1));
-				int width = isFrom ? (elementText.getSize().getWidth() - i * 2): (elementText.getSize().getWidth() + i * 2);
+				int width = isFrom ? (elementText.getSize().getWidth() - i * 5): (elementText.getSize().getWidth() + i * 2);
 				actions.clickAndHold(element)
 						.moveByOffset(width, elementText.getSize().getHeight()).release()
 						.build().perform();
@@ -245,7 +245,7 @@ public static Float getTotalGbForIpAddress(WebDriver driver, String ip) throws I
 			i = 1;
 			while (!elementText1.getText().equals(timeValue2)) {
 				WebElement element = driver.findElement(By.xpath(handleXpath2));
-				int width = isFrom ? (elementText1.getSize().getWidth() - i * 2): (elementText1.getSize().getWidth() + i * 2);
+				int width = isFrom ? (elementText1.getSize().getWidth() - i * 5): (elementText1.getSize().getWidth() + i * 2);
 				actions.clickAndHold(element)
 						.moveByOffset(width, elementText1.getSize().getHeight()).release()
 						.build().perform();
