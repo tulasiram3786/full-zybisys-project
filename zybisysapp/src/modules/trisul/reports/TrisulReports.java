@@ -12,6 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import reporters.ReportUtil;
 
 public class TrisulReports {
+
 	WebDriver driver;
 
 	public TrisulReports(WebDriver driver){

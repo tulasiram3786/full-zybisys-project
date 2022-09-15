@@ -44,7 +44,7 @@ public class privilege {
 	
 	@Test
 	public void setUp() throws InterruptedException {
-		DriverFactory.createDriver("chrome");
+		DriverFactory.createDriver("chrome",moduleName);
 		new Login().login(testData.USER_NAME, testData.PASSWORD);
 		
 	}

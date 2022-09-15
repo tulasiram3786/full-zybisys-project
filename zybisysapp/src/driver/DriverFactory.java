@@ -16,10 +16,10 @@ public class DriverFactory {
 
 	private static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<WebDriver>();
 	
-	public static void createDriver(String browserName) {
+	public static void createDriver(String browserName, String moduleName) {
 		WebDriver driver = null;
 		if(browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\dell\\Downloads\\104\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Tulasiram\\Desktop\\104\\chromedriver.exe");
 			driver = new ChromeDriver();	
 		}else if(browserName.equalsIgnoreCase("Firefox")) {
 		
@@ -37,7 +37,7 @@ public class DriverFactory {
 		}
 		driver.manage().window().maximize();
 		threadLocalDriver.set(driver);
-		CsvReporter.getReporter();
+		CsvReporter.getReporter(moduleName);
 	}
 	
 	public static WebDriver getDriver() {

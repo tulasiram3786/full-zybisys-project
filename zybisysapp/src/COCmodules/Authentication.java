@@ -106,12 +106,12 @@ public class Authentication {
 	 */
 	@Test(priority = 3)
 	void UserName() throws InterruptedException {
-		DriverFactory.createDriver("chrome");
+		DriverFactory.createDriver("chrome",moduleName);
 		ReportUtil.createTableWithHeader(new String[] { "Test Cases", "Expected Result", "Actual Result", "Status" });
 		String [] negativeScenarioUserNames=getTestDataArrayValue("negativeScenarioUserNames");
 		String validPasswords[] = getTestDataArrayValue("validPasswords");
 		for (int i = 0; i <negativeScenarioUserNames.length; i++) {
-			DriverFactory.createDriver("chrome");
+			DriverFactory.createDriver("chrome",moduleName);
 			login(negativeScenarioUserNames[i], validPasswords[0]);
 
 			boolean isLoginFailed = new Verify().pageContainsText("This is not a valid email address");

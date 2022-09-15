@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse--23186572\testng-customsuite.xml</span>
+                    <span>C:\Users\Tulasiram\AppData\Local\Temp\testng-eclipse--810974923\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,33 +130,35 @@
                   <a name="main">
                   </a> <!-- main -->
                   <span class="method-name">main</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input aria-invalid=&quot;false&quot; readonly=&quot;&quot; type=&quot;text&quot; class=&quot;MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense&quot; value=&quot;August 17, 2022  18:14&quot;&gt; is not clickable at point (204, 156). Other element would receive the click: &lt;div class=&quot;sc-bdnxRM jvCTkj&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=104.0.5112.82)
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=104.0.5112.81)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-L326GGM&apos;, ip: &apos;192.168.1.35&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;DESKTOP-NV05D01&apos;, ip: &apos;10.192.192.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6146a5ccf0b0bff97fcba4536435d6b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\TULASI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bae19a63f5c769da5eff69c200183a40
+*** Element info: {Using=xpath, value=//td[contains(@class,&apos;MuiTableCell-root MuiTableCell-body&apos;)][4]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at COCmodules.IpTracking.selectDateandTime(IpTracking.java:222)
-	at COCmodules.IpTracking.getRecevedGbForIpAddress(IpTracking.java:43)
-	at COCmodules.BandWidthReport.main(BandWidthReport.java:148)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at COCmodules.TopApps.getRecevedGbForIpAddress(TopApps.java:81)
+	at COCmodules.BandWidthReport.main(BandWidthReport.java:126)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -190,7 +192,7 @@ Session ID: a6146a5ccf0b0bff97fcba4536435d6b
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse--23186572\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Tulasiram\AppData\Local\Temp\testng-eclipse--810974923\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -243,12 +245,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'main')
 data.setCell(0, 2, 'COCmodules.BandWidthReport')
-data.setCell(0, 3, 362889);
+data.setCell(0, 3, 320353);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -299,53 +301,6 @@ return data;
                 <span class="reporter-method-output"><td>pass</td></span>
                 <span class="reporter-method-output"><td style="color:red">failed</td></span>
                 <span class="reporter-method-output"></tr></span>
-                <span class="reporter-method-output"><td>103.231.42.218</td></span>
-                <span class="reporter-method-output"><td>1 MB</td></span>
-                <span class="reporter-method-output"><td>0.32871997</td></span>
-                <span class="reporter-method-output"><td>pass</td></span>
-                <span class="reporter-method-output"><td style="color:red">failed</td></span>
-                <span class="reporter-method-output"></tr></span>
-                <span class="reporter-method-output"><td>Received Bandwith comparison with Iptracking</td></span>
-                <span class="reporter-method-output"><tr></span>
-                <span class="reporter-method-output"><table border="1"></span>
-                <span class="reporter-method-output"><thead></span>
-                <span class="reporter-method-output"><tr></span>
-                <span class="reporter-method-output"><th>IPaddress</th></span>
-                <span class="reporter-method-output"><th>Bandwith</th></span>
-                <span class="reporter-method-output"><th>Ip tracking</th></span>
-                <span class="reporter-method-output"><th>Expected status</th></span>
-                <span class="reporter-method-output"><th>Status</th></span>
-                <span class="reporter-method-output"></tr></span>
-                <span class="reporter-method-output"></thead></span>
-                <span class="reporter-method-output"><tbody></span>
-                <span class="reporter-method-output"><table border="1"></span>
-                <span class="reporter-method-output"><thead></span>
-                <span class="reporter-method-output"><tr></span>
-                <span class="reporter-method-output"><th>IPaddress</th></span>
-                <span class="reporter-method-output"><th>TrisulReport</th></span>
-                <span class="reporter-method-output"><th>COCReport</th></span>
-                <span class="reporter-method-output"><th>Status</th></span>
-                <span class="reporter-method-output"></tr></span>
-                <span class="reporter-method-output"></thead></span>
-                <span class="reporter-method-output"><tbody></span>
-                <span class="reporter-method-output"><tr></span>
-                <span class="reporter-method-output"><td>154.83.3.8</td></span>
-                <span class="reporter-method-output"><td>949 MB</td></span>
-                <span class="reporter-method-output"><td>0.0</td></span>
-                <span class="reporter-method-output"><td>pass</td></span>
-                <span class="reporter-method-output"><td style="color:red">failed</td></span>
-                <span class="reporter-method-output"></tr></span>
-                <span class="reporter-method-output"><table border="1"></span>
-                <span class="reporter-method-output"><thead></span>
-                <span class="reporter-method-output"><tr></span>
-                <span class="reporter-method-output"><th>IPaddress</th></span>
-                <span class="reporter-method-output"><th>TrisulReport</th></span>
-                <span class="reporter-method-output"><th>COCReport</th></span>
-                <span class="reporter-method-output"><th>Status</th></span>
-                <span class="reporter-method-output"></tr></span>
-                <span class="reporter-method-output"></thead></span>
-                <span class="reporter-method-output"><tbody></span>
-                <span class="reporter-method-output"><tr></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->

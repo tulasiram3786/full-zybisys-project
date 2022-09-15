@@ -55,7 +55,7 @@ public class DashBoard {
 	}
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
-		DriverFactory.createDriver("chrome");
+		DriverFactory.createDriver("chrome",moduleName);
 		new Login().login(testData.USER_NAME, testData.PASSWORD);
 		
 	}
@@ -65,7 +65,7 @@ public class DashBoard {
 	 */
 	@Test(priority = 1)
 	public void instanceTotalCount() throws InterruptedException {
-		CsvReporter.getReporter();
+		CsvReporter.getReporter(moduleName);
 		ReportUtil.createTableWithHeader(new String[] { "Test Cases", "Expected Result", "Actual Result", "Status" });
 		ReportUtil.addRow();
 		ReportUtil.addCell("Instance Total Count");

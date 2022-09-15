@@ -30,7 +30,7 @@ public class BandWidthReport {
    @Test
 	public static void main() throws InterruptedException {
 	  
-	   CsvReporter.getReporter();
+	    
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://dev.zybisys.com");
@@ -39,7 +39,7 @@ public class BandWidthReport {
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
 		driver.findElement(By.xpath("//span[text()='Login']")).click();
 		Thread.sleep(3000);
-		CsvReporter.getReporter();
+		
 		CsvReporter.addData("'26-07-2022 00:00'");
 		CsvReporter.addData("'27-07-2022 23:59'");
 		
@@ -123,7 +123,7 @@ public class BandWidthReport {
 		ReportUtil.createTableWithHeader(new String[] { "IPaddress", "Bandwith","Top Apps", "Expected status", "Status"});
 		
 		for (int j = 0; j < ipsList.size(); j++) {
-			Float totalMB = new TopApps().getRecevedGbForIpAddress(driver, ipsList.get(j));
+			Float totalMB = new TopApps().getRecevedGbForIpAddress(driver, ipsList.get(j)); //top apps and receiced in bandwidth
 			Boolean receivedBandthEqual = getBandWidthInMb(received.get(j))==totalMB;
 			ReportUtil.addCell(ipsList.get(j));
 			if(receivedBandthEqual){
@@ -145,7 +145,7 @@ public class BandWidthReport {
 		 * 
 		 */
 		for (int j = 0; j < ipsList.size(); j++) {
-			Float totalIpTrackingMb = IpTracking.getRecevedGbForIpAddress(driver, ipsList.get(j));
+			Float totalIpTrackingMb = IpTracking.getRecevedGbForIpAddress(driver, ipsList.get(j));  //iptracking and receiced in bandwidth
 			Boolean iptrackingEqual = getBandWidthInMb(received.get(j))==totalIpTrackingMb;
 			if(iptrackingEqual){
 				System.out.println(ipsList.get(j)+"Iptracking received "+totalIpTrackingMb+" MB == "+ received.get(j));
@@ -169,7 +169,7 @@ public class BandWidthReport {
 		 */
 		
 		for (int j = 0; j < ipsList.size(); j++) {
-			Float totalMB = new TopApps().getTransmittedGbForIpAddress(driver, ipsList.get(j));
+			Float totalMB = new TopApps().getTransmittedGbForIpAddress(driver, ipsList.get(j));  // top apps and bandwidth transmitted
 			Boolean transmittedBandthEqual = getBandWidthInMb(transmitted.get(j))==totalMB;
 			ReportUtil.addCell(ipsList.get(j));
 			if(transmittedBandthEqual){
@@ -189,7 +189,7 @@ public class BandWidthReport {
 		ReportUtil.addRow();
 		ReportUtil.createTableWithHeader(new String[] { "IPaddress", "Bandwith","Ip tracking", "Expected status", "Status"});
 		for (int j = 0; j < ipsList.size(); j++) {
-			Float totalIpTrackingMb = IpTracking.getTranmittedGbForIpAddress(driver, ipsList.get(j));
+			Float totalIpTrackingMb = IpTracking.getTranmittedGbForIpAddress(driver, ipsList.get(j)); // ip tracking and bandwidth transmitted
 			Boolean iptrackingEqual = getBandWidthInMb(transmitted.get(j))==totalIpTrackingMb;
 			if(iptrackingEqual){
 				System.out.println(ipsList.get(j)+"Iptracking transmitted "+totalIpTrackingMb+" MB == "+ transmitted.get(j));
@@ -208,7 +208,7 @@ public class BandWidthReport {
 				
 
    for (int j = 0; j < ipsList.size(); j++) {
-		Float totalMB = new TopApps().getTotalGbForIpAddress(driver, ipsList.get(j));
+		Float totalMB = new TopApps().getTotalGbForIpAddress(driver, ipsList.get(j)); //top apps and bandwidth total 
 		Boolean totalBandthEqual = getBandWidthInMb(total.get(j))==totalMB;
 		ReportUtil.addCell(ipsList.get(j));
 		if(totalBandthEqual){
@@ -226,7 +226,7 @@ public class BandWidthReport {
 	ReportUtil.addRow();
 	ReportUtil.createTableWithHeader(new String[] { "IPaddress", "Bandwith","Ip tracking", "Expected status", "Status"});
 	for (int j = 0; j < ipsList.size(); j++) {
-		Float totalIpTrackingMb = IpTracking.getTotalGbForIpAddress(driver, ipsList.get(j));
+		Float totalIpTrackingMb = IpTracking.getTotalGbForIpAddress(driver, ipsList.get(j)); // ip tracking and bandwidth total
 		Boolean iptrackingEqual = getBandWidthInMb(transmitted.get(j))==totalIpTrackingMb;
 		if(iptrackingEqual){
 			System.out.println(ipsList.get(j)+"Iptracking total "+totalIpTrackingMb+" MB == "+ total.get(j));

@@ -14,7 +14,7 @@ public class ReportUtil {
  * Acutual result
  * </th>
  * </tr>
- * </thead>
+ * </thead> 
  */
 	public static void createTableWithHeader(String[] headers) {
 		Reporter.log("<table border=\"1\">");

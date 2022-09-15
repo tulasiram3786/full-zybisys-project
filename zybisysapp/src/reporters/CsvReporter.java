@@ -14,15 +14,16 @@ public class CsvReporter {
 	/*
 	 * Store the file path
 	 */
-	String fileName = "C:\\Users\\dell\\Desktop\\zybisysapp\\index.csv";
+	 
 	/*
 	 * Constructor
 	 */
-	private CsvReporter(){
+	private CsvReporter(String fileName){
 		try {
 			/* Create the object for new file
 			 * 
 			 */
+			fileName = "C:\\Users\\Tulasiram\\Desktop\\104\\"+fileName+".csv";
 			File file= new File(fileName);
 			/*
 			 * if file already exist delete the file
@@ -48,7 +49,7 @@ public class CsvReporter {
 		
 	}
 	
-	public static void getReporter() {
+	public static void getReporter(String fileName) {
 		/*
 		 * if any values in writer it wont do anything
 		 */
@@ -59,7 +60,7 @@ public class CsvReporter {
 		 * Create new CSVReporter
 		 * 
 		 */
-		new CsvReporter();
+		new CsvReporter(fileName);
 	}
 
 	public static void createTableWithHeader(String[] headers)  {
